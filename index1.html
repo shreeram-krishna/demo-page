@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Demo - Shrimadh Ramayanam</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: linear-gradient(135deg, #4a90e2, #9013fe);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+    }
+
+    /* Video Section */
+    .video-section {
+      margin: 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+    }
+
+    .video-card {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .video-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-card video {
+      width: 100%;
+      display: block;
+    }
+
+    .video-card .title {
+      padding: 1rem;
+      background: #f7f7f7;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .video-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* Info Section */
+    .info-section {
+      margin: 3rem 0;
+      text-align: center;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-section p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .info-highlight {
+      color: #4a90e2;
+      font-weight: bold;
+    }
+
+    /* Button Section */
+    .button-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .button-section .btn {
+      background: #4a90e2;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .button-section .btn:hover {
+      background: #9013fe;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .button-section .btn {
+        width: 90%;
+        padding: 0.7rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Watch Demo - Shrimadh Ramayanam</h1>
+  </header>
+
+  <!-- Video Section -->
+  <div class="container">
+    <section class="video-section">
+      <!-- Video 1 -->
+      <div class="video-card">
+        <video controls>
+          <source src="./video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="title">Demo Video 1</div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+        <video controls>
+          <source src="./video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="title">Demo Video 2</div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <p><span class="info-highlight">100% Daily Uploads</span> ensure you never miss an episode. Payments can be made only after <span class="info-highlight">proof of delivery</span>.</p>
+    </section>
+
+    <!-- Button Section -->
+    <div class="button-section">
+      <button class="btn" onclick="goToHome()">Go to Home</button>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for "Go to Home" button
+    function goToHome() {
+      window.location.href = "index.html"; // Replace with the correct home page URL
+    }
+  </script>
+</body>
+</html>
