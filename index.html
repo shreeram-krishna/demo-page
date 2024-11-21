@@ -120,35 +120,38 @@
     }
 
     /* Button Section */
-    .button-section {
-      text-align: center;
-      margin-top: 3rem;
-    }
+   .button-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
 
+  .button-section .btn {
+    display: inline-block;
+    background: #4a90e2;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .button-section .btn:hover {
+    background: #9013fe;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
     .button-section .btn {
-      background: #4a90e2;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.3s;
+      width: 90%;
+      padding: 0.7rem;
+      font-size: 0.9rem;
     }
-
-    .button-section .btn:hover {
-      background: #9013fe;
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 768px) {
-      .button-section .btn {
-        width: 90%;
-        padding: 0.7rem;
-        font-size: 0.9rem;
-      }
-    }
+  }
   </style>
 </head>
 <body>
@@ -186,9 +189,10 @@
     </section>
 
     <!-- Button Section -->
-    <div class="button-section">
-      <button class="btn" onclick="goToHome()">Go to Home</button>
-    </div>
+<div class="button-section">
+  <a href="index.html" class="btn">Go to Home</a>
+</div>
+
   </div>
 
   <script>
